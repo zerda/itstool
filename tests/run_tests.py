@@ -208,6 +208,11 @@ class ItstoolTests(unittest.TestCase):
                                              po_file='Translate3.ll.wrong.po',
                                              xml_file='Translate3.ll.wrong.xml')
 
+    def test_Translate2_zh_CN(self):
+    	res = self._test_translation_process('Translate2.xml',
+                                             po_file='Translate2.ll.zh_CN.po',
+                                             xml_file='Translate2.ll.zh_CN.xml')
+
 
 class ITSTestRunner(unittest.TextTestRunner):
     def run(self, test):
